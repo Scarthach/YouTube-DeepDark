@@ -60,7 +60,7 @@
 
 ==/UserStyle== */
 
-@-moz-document regexp('https?:\\/\\/(?!gaming\\.)(?!music\\.)(?!tv\\.)(?!artists\\.)(?!studio\\.)(?!consent\\.).*youtube(?!kids\\.).*\\.com\\/(?!premium|howyoutubeworks).*$') {
+@-moz-document regexp('https?:\\/\\/(?!gaming\\.)(?!music\\.)(?!tv\\.)(?!artists\\.)(?!studio\\.)(?!consent\\.).*youtube(?!kids\\.).*\\.com\\/(?!premium|howyoutubeworks).*$'), regexp("") {
 	/* Author     : Theme made by RaitaroH */
 	/* Co-authors : https://github.com/MechaLynx https://github.com/MaximeRF */
 	/* Home       : https://github.com/RaitaroH/YouTube-DeepDark */
@@ -77,7 +77,7 @@
 			--main-text: #eff0f1;
 			--dimmer-text: #ccc;
 			--shadow: 0 1px 0.5px rgba(0, 0, 0, .3);
-		}
+		}/*
 		else if stylus-deepdark-style == "Inspired-Dark" {
 			--main-color: #5e8acc;
 			--main-background: #232629;
@@ -115,12 +115,12 @@
 			--shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
 		}
 		else if stylus-deepdark-style == "Dracula" {
-			--main-color: #bd93f9;                      /*Purple*/
-			--main-background: hsl(231, 15%, 18%);      /*Background*/
-			--second-background: hsl(231, 15%, 22%);    /*Manually generated from Background*/
-			--hover-background: #44475a;                /*Selection*/
-			--main-text:#f8f8f2;                        /*Foreground*/
-			--dimmer-text: #bcc2cd;                     /*From .app-title https://draculatheme.com/*/
+			--main-color: #bd93f9;                          Purple
+			--main-background: hsl(231, 15%, 18%);          Background
+			--second-background: hsl(231, 15%, 22%);        Manually generated from Background
+			--hover-background: #44475a;                    Selection
+			--main-text:#f8f8f2;                            Foreground
+			--dimmer-text: #bcc2cd;                         From .app-title https://draculatheme.com/*/     /*
 			--shadow: 0 1px 0.5px rgba(0, 0, 0, .15);
 		}
 		else if stylus-deepdark-style == "Firefox-Dark" {
@@ -347,7 +347,14 @@
 			--main-text: mainText;
 			--dimmer-text: dimmerText;
 			--shadow: 0 1px 0.5px colorShadow;
-		}
+		}*/
+        
+    /*Fix enhancer buttons in control bar*/
+    .efyt-control-bar   {
+        background-color: var(--second-background) !important;
+    }
+    --efyt-control-bar-color: var(--main-text) !important;
+    
 	}
 	/*Error page*/
 	#error-page
@@ -821,7 +828,7 @@
 	/*side channels*/
 	#title:not([class*="ytd-labs"]):not([class*="upsell-offer"])
 	{
-		color: var(--main-text) !important;
+		/*color: var(--main-text) !important;*/
 	}
 	.title
 	{
@@ -1185,7 +1192,7 @@
 	}
 	a.yt-simple-endpoint.yt-formatted-string:only-of-type
 	{
-		color: var(--main-text) !important;
+		/*color: var(--main-text) !important;*/
 	}
 	a.yt-simple-endpoint.yt-formatted-string:only-of-type:hover,
 	#text.ytd-channel-name a.yt-simple-endpoint.yt-formatted-string:only-of-type
@@ -1218,7 +1225,7 @@
 	}
 	#name.ytd-author-comment-badge-renderer
 	{
-		color: var(--main-text) !important;
+		/*color: var(--main-text) !important;*/
 	}
 	#name:hover
 	{

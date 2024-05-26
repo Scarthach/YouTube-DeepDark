@@ -1112,7 +1112,7 @@
 	#channel-title.ytd-channel-renderer span.ytd-channel-renderer,
 	#text.ytd-channel-name
 	{
-		color: var(--main-color) !important;
+		/*color: var(--main-color) !important;*/
 	}
 	/*metadata*/
 	#metadata-line.ytd-grid-video-renderer, #metadata-line.ytd-video-meta-block span.ytd-video-meta-block,
@@ -1190,7 +1190,7 @@
 	a.yt-simple-endpoint.yt-formatted-string:only-of-type:hover,
 	#text.ytd-channel-name a.yt-simple-endpoint.yt-formatted-string:only-of-type
 	{
-		color: var(--main-color) !important;
+		/*color: var(--main-color) !important;*/
 	}
 	/*Borders*/
 	#contents.ytd-section-list-renderer > .ytd-section-list-renderer:not(:last-child):not(ytd-page-introduction-renderer)
@@ -1721,7 +1721,7 @@
 
 	.yt-simple-endpoint.style-scope.yt-formatted-string
 	{
-		color: var(--dimmer-text) !important;
+		/*color: var(--dimmer-text) !important;*/
 	}
 	/*video hashtags & links in settings page*/
 	#super-title .yt-simple-endpoint.style-scope.yt-formatted-string,
@@ -4380,3 +4380,4 @@
 		color: var(--main-text) !important;
 	}
 }
+
